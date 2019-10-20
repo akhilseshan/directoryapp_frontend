@@ -8,6 +8,8 @@ import Contact from './components/contact';
 import axios from 'axios';
 import Login from './components/login';
 
+var url = "https://e58b8bfe.ngrok.io/api/helloworld";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,13 +21,13 @@ class App extends Component {
     this.handleMouseOver = this.handleMouseOver.bind(this);
   }
   handleMouseOver() {
-    axios.get('https://e58b8bfe.ngrok.io/api/helloworld').then((res) => {
+    axios.get(url).then((res) => {
       console.log(res.data.name);
       this.setState({ msg: res.data.name })
     });
   }
   handleOnLoad() {
-    axios.get('https://e58b8bfe.ngrok.io/api/helloworld').then((res) => {
+    axios.get(url).then((res) => {
       console.log(res.data.name);
       this.setState({ msg: res.data.name })
     });
