@@ -1,3 +1,6 @@
+## Directory App
+This is a web-app that is built for students to view details about other students.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
